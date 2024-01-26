@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  web:
+    image: ${IMAGE_NAME}:${BUILD_NUMBER}
+    ports:
+      - "8082:8082"
+     container_name: dart-api-image-dev
