@@ -65,7 +65,7 @@ stage('Docker Push') {
 
       //   // Use Docker Compose to spin up the container
       //   sh "docker-compose up -d"
-        }
+      //  }
     }
 }
 
