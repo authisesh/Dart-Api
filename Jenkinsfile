@@ -59,13 +59,7 @@ stage('Docker Push') {
         
         sh "docker tag ${IMAGE_NAME}:${BUILD_NUMBER} ${NEXUS_DOCKER_REPO}${IMAGE_NAME}:${BUILD_NUMBER}"
         sh "docker push ${NEXUS_DOCKER_REPO}${IMAGE_NAME}:${BUILD_NUMBER}"
-      // // Update the docker-compose.yml file
-      //   dir("/root/.jenkins/workspace/Dart_UI/Dart-UI") {
-      //   sh "sed -i 's|image: ${IMAGE_NAME}:.*|image: ${NEXUS_DOCKER_REPO}${IMAGE_NAME}:${BUILD_NUMBER}|' docker-compose.yml"
-
-      //   // Use Docker Compose to spin up the container
-      //   sh "docker-compose up -d"
-      //  }
+    
     }
 }
 
