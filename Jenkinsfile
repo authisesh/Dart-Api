@@ -73,8 +73,6 @@ stage('Docker Push') {
                  sh "docker-compose up -d"
             }
         }
-    }
-
-
+    } 
     }
 }
