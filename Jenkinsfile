@@ -67,7 +67,7 @@ stage('Docker Push') {
         steps {
             echo 'Spinning Docker-Compose'
            // Update the docker-compose.yml file
-            dir("/root/.jenkins/workspace/Dart_UI/Dart-UI") {
+            dir("/root/.jenkins/workspace/Dart_Api/Dart-Api") {
                  sh "sed -i 's|image: ${IMAGE_NAME}:.*|image: ${NEXUS_DOCKER_REPO}${IMAGE_NAME}:${BUILD_NUMBER}|' docker-compose.yml"
                   // Use Docker Compose to spin up the container
                  sh "docker-compose up -d"
