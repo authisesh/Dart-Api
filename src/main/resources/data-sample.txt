@@ -1,0 +1,5 @@
+{"tableDataList":[{"tableName":"DATES","dataCount":0},{"tableName":"USER","dataCount":151},{"tableName":"USER","dataCount":30},{"tableName":"CUSTOMER","dataCount":100},{"tableName":"DATA","dataCount":70}]}
+
+
+
+
