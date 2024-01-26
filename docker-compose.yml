@@ -5,5 +5,5 @@ services:
     image: ${IMAGE_NAME}:${BUILD_NUMBER}
     ports:
       - "8082:8082"
-      command: ["java", "-jar", "coredatareportingservice-si-1.0.1-SNAPSHOT.jar"]
-     container_name: dart-api-image-dev
+    command: ["java", "-jar", "coredatareportingservice-si-1.0.1-SNAPSHOT.jar"]
+    container_name: dart-api-image-dev
